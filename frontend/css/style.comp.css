@@ -1156,7 +1156,7 @@ pt-3 {
   align-content: center;
   padding-top: 50px;
   padding-bottom: 50px;
-  background-image: url(/static/img/new.webp);
+  background-image: url(/frontend/img/new.jpg);
   background-size: cover;
   background-position: top;
   background-position: center center;
@@ -1330,6 +1330,36 @@ pt-3 {
 
 .s-form {
   width: 100%;
+}
+
+.s3 {
+  background-color: var(--mainColor);
+  border-bottom: 1px solid var(--borderColor);
+  padding: 5em 0;
+}
+.s3 img {
+  max-width: 100%;
+  object-fit: cover;
+}
+.s3 video {
+  max-width: 100%;
+  object-fit: cover;
+}
+.s3 .featured_image {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.s3 hr {
+  color: gold;
+}
+
+#div_id_tags,
+#id_tags {
+  overflow-y: scroll;
+  max-height: 100px;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #888;
 }
 
 /*# sourceMappingURL=style.comp.css.map */
