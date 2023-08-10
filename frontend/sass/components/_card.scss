@@ -1,0 +1,35 @@
+.card{
+    background: #fff;
+    padding: 30px;
+    
+    .price{
+        
+        span{
+            color:#cccccc;
+
+            span{
+                font-size:3rem;
+                color:$color-primary
+            }
+        }
+    }
+
+    ul{
+        padding-left: 0;
+        list-style: none;
+        margin-bottom: 50px;
+
+        li{
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 15px;
+            line-height: 1.5;
+            font-size: 1.2rem;
+        }
+
+    }
+    p{
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+}

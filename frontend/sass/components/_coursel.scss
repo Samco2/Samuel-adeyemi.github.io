@@ -1,0 +1,113 @@
+.slider-con{
+    position: relative;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+
+}
+.slider-con .wrapper{
+
+    width: 110%;
+    height:85%;
+    //border: 5px solid black;
+    //margin: 5rem auto;
+    animation:slide 120s ease infinite;
+    //background-color: grayscale;
+    
+    
+}
+
+.slider-con .slider-holder{
+display: grid;
+grid-template-columns: repeat(4, 100%);
+height: 100%;
+
+}
+.slider-con #slider-1{
+    text-align: center;
+//background-color: lawngreen;
+//background:url('/img/benjamin_frank.jpg');
+//background-size: contain;
+//background-position: top;
+
+
+}
+.slider-con .button-holder .dots{
+    display:inline-block;
+    height: 15px;
+    width: 15px;
+}
+
+.slider-con #slider-2{
+    text-align: center;
+    //background-color: yellow;
+    //background:url('/img/chris_stewart.jpg');
+    
+    //background-size: contain;
+    //background-position: top;
+}
+
+.slider-con #slider-3{
+    text-align: center;
+    //background-color: tomato;
+    //background:url('/img/dave_simpson.jpg');
+    //background-size: contian;
+    //background-position: top;
+}
+.slider-con #slider-4 {
+    text-align: center;
+    //background-color: rgb(35, 15, 11);
+    //background:url('/img/dave_simpson.jpg');
+    //background-size: contian;
+    //background-position: top;
+}
+.slider-con .button-holder{
+    position: absolute;
+    bottom:0%;
+    left:45%;
+}
+.slider-con .button-holder .dots{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #dee2e6;
+    margin:4px 3px;
+    
+    
+}
+@keyframes slide{
+    0%{transform:translateX(-00%)}
+    10%{transform:translateX(-00%)}
+    20%{transform:translateX(-00%)}
+    30%{transform:translateX(-100%)}
+    40%{transform:translateX(-100%)}
+    50%{transform:translateX(-100%)}
+    60%{transform:translateX(-200%)}
+    70%{transform:translateX(-200%)}
+    80%{transform:translateX(-200%)}
+    90%{transform:translateX(-300%)}
+    100%{transform:translateX(-300%)}
+}
+
+
+.testimonial {
+    max-width: 800px;
+    margin: 0 auto !important;
+    text-align: center;
+
+    blockquote {
+        font-size: 1.5rem;
+        font-style: italic;
+    }
+
+    figure img {
+        max-width: 100px;
+        margin: 0 auto;
+        border-radius: 50%;
+    }
+}
+
+
+
+

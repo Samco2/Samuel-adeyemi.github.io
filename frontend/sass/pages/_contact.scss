@@ -1,0 +1,114 @@
+.cta-big-image > .container {
+    position: relative; 
+}
+
+.team-mate{
+    .position {
+        color: #cccccc;
+        text-transform: uppercase;
+        font-size: .8rem;
+        letter-spacing: .05rem; 
+    }
+
+    figure {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .social {
+        position: absolute;
+        margin: 0;
+        top: 0;
+        padding: 0;
+        bottom: 0;
+        padding: 10px;
+        -webkit-transform: translateX(-101%);
+        -ms-transform: translateX(-101%);
+        transform: translateX(-101%);
+        -webkit-transition: .3s all ease;
+        -o-transition: .3s all ease;
+        transition: .3s all ease;
+        background: #007bff;
+
+        li {
+            list-style: none;
+            
+            a {
+                display: inline-block;
+                padding: 5px;
+                color: #fff; 
+            }
+        }
+    }
+
+    h3 {
+        color: #000;
+        margin: 0;
+        bottom: 0;
+        font-size: 1.2rem; 
+    }
+
+    a{
+        display: flex;;
+    }
+
+    &-icon{
+        width:4rem;
+        height:4rem;
+        margin-right: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.social-a {
+    display: flex;
+    flex-direction: row;
+    
+
+    a{
+        font-size: 1.6rem;
+        display:inline-flex;
+        justify-content: center;
+        text-align: center;
+        color: var(--secondaryText);
+        font-family: 'Roboto Mono', monospace;
+        
+    }
+}
+
+.head-1{
+    display: flex;
+    justify-content: space-evenly;
+    //background-color: var(--previewShadow);
+    color: var(--mainText);
+    font-family: 'Russo One', sans-serif;
+    font-weight: 500;
+    
+}
+
+
+  
+.team-mate:hover .social {
+    transform: translateX(0%); 
+}
+
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon' !important;
+    //speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.img-fluid {
+    max-width: 15%;
+    height: auto;
+}
+

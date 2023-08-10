@@ -1,0 +1,9 @@
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #918ca4;
+    box-sizing: border-box;
+    background-color: #030f35;
+  }

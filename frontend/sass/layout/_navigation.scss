@@ -1,0 +1,165 @@
+/*------Nav bar-------*/
+
+.navbar {
+
+    margin-bottom: 0px;
+    z-index: 1999;
+    position: absolute;
+    top: 0;
+    left: 0rem;
+    width: 100%;
+    border-bottom: rgba(255, 255, 255, 0.7);
+    background-color: rgba($color-white, 1);
+    align-items: center!important;
+    
+    &-logo {
+        position: relative;
+        left: 2rem;
+        top: 5px;
+        font-family: Work Sans !important;
+        font-size: 4.5rem;
+        font-weight: 700 !important;
+        margin-bottom: 0!important;
+        float: right;
+        
+    
+        a {
+            color: $color-primary !important;
+            text-transform: uppercase !important;
+            background-color: transparent;
+            text-decoration: none;
+    
+        }
+    }
+
+    
+
+    &__menu {
+        float: right;
+        margin-right: 1rem;
+        display: flex;
+        line-height: 1.7;
+        color: gray;
+        font-weight: 400;
+        font-size: 2rem;
+
+        
+        
+        @include respond(tab-port) {
+            display: none;
+        }
+
+
+
+        &__list{
+            float: right;
+            position: relative;
+            left: 83rem;
+            top:-19rem;
+            z-index: 100;
+
+
+            &-li:hover ul{
+                display: block;
+            }
+
+            &-li{
+                float: left;
+                list-style: none;
+                position: relative;
+
+
+
+                &-li:hover ul{
+                    display: block;
+                }
+
+                
+
+                a{
+                    display: block;
+                    font-family: Work Sans !important;
+                    color: $color-grey-dark-3;
+                    font-size:2.0rem;
+                    font-weight: 500;
+                    padding: 0.5rem 1rem;
+                    text-decoration: none;
+                    font-family: "Work Sans" !important;
+                
+                &:focus,
+                &:active,
+                &:hover,
+                &:focus-visible {
+                    outline:none;
+                    box-shadow: 0 1rem 2rem rgba ($color-black, .1);
+                    border-bottom: 3px solid $color-primary-light;
+                    color:$color-primary !important;
+                }
+                }
+                ul {
+                    display: none;
+                    position: absolute;
+                    //background-color: $color-screen;
+                    background-color: rgba($color-white, 0.2);
+                    padding: 1rem;
+                    border-radius: 1rem;
+
+                }
+
+
+
+                &-sub{
+                    list-style: none;
+                    width: 5rem;
+                    border-radius: .4rem;
+                    background-color: $color-white;
+                    a{
+                        padding: .8rem 1.4rem;
+                        color: rgba(255, 255, 255, 0.7) !important;
+                        padding: 0rem 0.5rem;
+
+
+                    }
+
+                    a:hover{
+                        background-color: rgba($color-black, 0.5);
+                        width: 2rem;
+
+
+                    }
+                }
+
+               
+
+
+            }
+        }
+
+         
+        
+         
+
+
+        
+    }    
+      
+}
+
+
+.dim {
+    width:100%; 
+    height:6rem; 
+    position: fixed;
+    top: 0px; 
+    z-index: 2000;
+}
+
+
+
+
+
+
+
+
+
+  

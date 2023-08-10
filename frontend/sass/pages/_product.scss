@@ -1,0 +1,117 @@
+
+ .line hr {
+    position: relative;
+    top: 15rem;
+    width: 100%;
+    //border: 0;
+    border-top: .1rem solid $color-gold;
+}
+.brand {
+    background-color: $color-primary;
+    position: relative;
+    top: 10rem;
+    width: 73vw;
+    left: 18rem;
+    
+    
+   
+    h1 {
+        color: #5bc2dc;
+        font-size: 21px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        border-bottom: 1px solid #5bc2dc;
+        margin: 0 0 1em
+    }
+
+    &__beverage, &__sprite{
+       // position:absolute;
+        padding: 3rem;
+        display: block;
+        
+        
+        ul {
+            margin: 20px 0;
+            font-size: 0;
+            list-style: none;
+
+        li {
+            display: inline-block;
+            margin: 0 2.7rem 3rem 1.4rem;
+            
+            a{
+                display: block;
+
+                img{
+                    height: 124px;
+                }
+            }
+        }
+        }
+
+        
+        
+        
+    }
+
+    &__heading {
+        display: block;
+        position: absolute;
+        
+        width: 73vw;
+        left: 0rem;
+        
+
+        &-1{
+            background: #7dd7ed;
+            position: relative;
+            top: -2rem;
+
+            
+
+        }
+
+        &-2{
+            background: #ddb693;
+            position: relative;
+            top: -6rem;
+            
+        }
+        &-3{
+            background: #efdc72;
+            position: relative;
+            top: -6rem;
+            
+        }
+        &-4{
+            background: #df73b0;
+            position: relative;
+            top: -6rem;
+            
+        }
+
+        &-5{
+            background: #8eedac;
+            position: relative;
+            top: -6rem;
+            
+        }
+
+        h2 span {
+            left: 16px;
+            top: 8px;
+            width: 33px;
+            height: 33px;
+            overflow: hidden;
+
+            img{
+                margin-top: 0;
+                width: 3.3rem;
+            }
+        }
+        
+
+    }    
+
+    
+}

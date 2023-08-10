@@ -1,0 +1,12 @@
+.pagination {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: .25rem;
+}
+ .icon-s{
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+    flex-basis: 100%;
+ }

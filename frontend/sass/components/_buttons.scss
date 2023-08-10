@@ -1,0 +1,126 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        text-decoration: none;
+        padding: 1rem 1rem;
+        display: inline-block;
+        border-radius: 1rem;
+        transition:all .2s;
+        position: relative;
+        font-size: 1.4rem;
+
+        //Change for the <button> element
+        border: none;
+        cursor: pointer;
+    }
+    &-pg{
+      &,
+      &:link,
+      &:visited {
+          padding: 1rem 1rem !important;
+          border-radius: none !important;
+
+          //Change for the <button> element
+          border: solid !important;
+
+      }
+
+    }
+
+    &:hover
+    {
+        transform: translateY(-1px);
+        outline: none;
+        box-shadow: none !important;
+
+        &::after {
+            transform: scaleX(0.5) scaleY(0.6);
+            opacity: 0;
+        }
+    }
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: none !important;
+    }
+
+
+
+    &-primary {
+        background: $color-primary;
+        border-color: $color-primary;
+        color: $color-white;
+
+        &:hover
+        {   background: $color-black;
+            border-color: $color-black;
+            color: $color-white;
+            box-shadow: none !important;
+        }
+    }
+    &-secondary {
+        color: #fff;
+        background-color: #6c757d;
+        border-color: #6c757d;
+
+        :hover {
+            color: $color-white;
+            background-color: #5a6268;
+            border-color: #545b62;
+        }
+    }
+
+
+}
+
+
+.filters {
+    .btn{
+        border-color: transparent;
+        font-size: .8rem;
+        padding: 8px 20px;
+        margin: 5px;
+        background: rgba(52, 58, 64, 0.05);
+        color: #343a40;
+
+
+        &:hover {
+            border-color: transparent;
+            background: #007bff;
+            color: #fff;
+        }
+
+        &:active {
+            background: #000 !important;
+            color: #fff;
+            border-color: #007bff !important;
+        }
+
+    }
+
+
+
+
+
+}
+
+
+  .btn-p, .btn-p:link, .btn-p:visited {
+    text-decoration: none;
+    /* padding: 1rem 3rem; */
+    display: inline-block;
+    /* border-radius: 3rem; */
+    transition: all 0.2s;
+    position: relative;
+    font-size: 1.6rem;
+    border: solid;
+    cursor: pointer;
+}
+
+.png{
+  padding: 0.3rem 0.3rem !important;
+  border-radius: 0 !important;
+  border: solid !important;
+}
