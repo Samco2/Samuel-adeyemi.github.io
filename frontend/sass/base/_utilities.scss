@@ -260,6 +260,14 @@ pt-3 {
 .dl{
     justify-content: stretch;
     gap: 7rem;
+    @include respond(tab-port) { // width <800px
+        gap: 4rem;
+        
+    }
+    @include respond(phone) { // width <600px
+        gap: 1rem;
+        
+    }
 }
 
 .t-1{

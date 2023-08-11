@@ -1,12 +1,12 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "Landing page for oneder",
+  "description": "profile",
   "main": "index.js",
   "scripts": {
     "watch:sass": "sass sass/main.scss css/style.css -w",
     "devserver": "live-server",
-    "start": "npm-run-all --parallel devserver watch:sass compile:sass",
+    "start": "npm-run-all --parallel devserver watch:sass",
     "compile:sass": "sass sass/main.scss css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
     "compress:css": "sass css/style.prefix.css css/style.css --output-style compressed",
@@ -14,7 +14,15 @@
   },
   "author": "samco",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Samco2/tiaco/issues"
+  },
+  "homepage": "https://github.com/Samco2/tiaco#readme",
   "devDependencies": {
-    "sass": "^1.63.6"
+    "sass": "^1.63.4"
+  },
+  "dependencies": {
+    "all": "^0.0.0",
+    "node": "^20.2.0"
   }
 }

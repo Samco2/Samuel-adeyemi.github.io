@@ -32,8 +32,15 @@ ORDER: Base + typography > general layout + grid > page layout > components
 1em = 16px
 */
 @mixin respond($breakpoint){
+    @if $breakpoint == mini-phone {
+        @media(max-width: 25.0em) {@content}; //400px
+    }
     @if $breakpoint == phone {
         @media(max-width: 37.5em) {@content}; //600px
+    }
+
+    @if $breakpoint == tab-portt {
+        @media(max-width: 43.75em) {@content}; //700px
     }
 
     @if $breakpoint == tab-port {

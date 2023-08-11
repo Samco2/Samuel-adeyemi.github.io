@@ -59,6 +59,12 @@
         height:4rem;
         margin-right: 1rem;
         margin-bottom: 2rem;
+
+        @include respond(phone) { // width <600px
+            width:2rem;
+            height:2rem;
+            
+        }
     }
 }
 

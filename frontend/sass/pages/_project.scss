@@ -3,6 +3,18 @@
 	border-bottom:1px solid var(--borderColor);
 	padding: 5em 0;
 
+    @include respond(mini-phone) { // width <800px
+        h2{
+            font-size:25px;
+        }
+        h4{
+            font-size:20px; 
+        }
+        
+    }
+
+    
+
     
 
     img {

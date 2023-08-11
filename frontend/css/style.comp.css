@@ -228,7 +228,7 @@ html {
 }
 @media (max-width: 56.25em) {
   html {
-    font-size: 50%;
+    font-size: 80%;
   }
 }
 @media (min-width: 112.5em) {
@@ -1065,6 +1065,28 @@ pt-3 {
   width: 80%;
   margin: 0 auto;
 }
+@media (max-width: 56.25em) {
+  .container-1 {
+    width: 100%;
+  }
+}
+@media (max-width: 43.75em) {
+  .container-1 {
+    width: 100%;
+  }
+}
+@media (max-width: 37.5em) {
+  .container-1 {
+    width: 100%;
+    align-items: center;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .m h5 {
+    display: none;
+  }
+}
 
 .dots {
   display: flex;
@@ -1098,6 +1120,12 @@ pt-3 {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
+@media (max-width: 43.75em) {
+  .left-column {
+    position: relative;
+    left: 18vw;
+  }
+}
 
 #profile_pic {
   display: block;
@@ -1109,6 +1137,14 @@ pt-3 {
 #theme-options-wrapper {
   display: flex;
   justify-content: center;
+}
+@media (max-width: 56.25em) {
+  #theme-options-wrapper {
+    flex-direction: column;
+  }
+  #theme-options-wrapper h5 {
+    font-size: 1.6rem;
+  }
 }
 
 .theme-dot {
@@ -1153,16 +1189,27 @@ pt-3 {
 .right-column {
   grid-area: right-column;
   display: grid;
-  align-content: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-image: url(/frontend/img/new.jpg);
   background-size: cover;
   background-position: top;
   background-position: center center;
   margin: 7rem;
   background-color: var(--previewthickShadow);
   border-radius: 2rem;
+}
+.right-column img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+}
+@media (max-width: 56.25em) {
+  .right-column {
+    margin: 6rem;
+  }
+}
+@media (max-width: 43.75em) {
+  .right-column {
+    display: none;
+  }
 }
 
 #preview-shadow {

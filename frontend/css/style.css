@@ -228,7 +228,7 @@ html {
 }
 @media (max-width: 56.25em) {
   html {
-    font-size: 50%;
+    font-size: 80%;
   }
 }
 @media (min-width: 112.5em) {
@@ -589,6 +589,16 @@ pt-3 {
 .dl {
   justify-content: stretch;
   gap: 7rem;
+}
+@media (max-width: 56.25em) {
+  .dl {
+    gap: 4rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .dl {
+    gap: 1rem;
+  }
 }
 
 .t-1 {
@@ -1060,10 +1070,42 @@ pt-3 {
   text-align: center;
   min-height: 10em;
 }
+@media (max-width: 37.5em) {
+  .home-title h1 {
+    font-size: 3.4rem;
+  }
+}
+@media (max-width: 25em) {
+  .home-title h1 {
+    font-size: 3rem;
+  }
+}
 
 .container-1 {
   width: 80%;
   margin: 0 auto;
+}
+@media (max-width: 56.25em) {
+  .container-1 {
+    width: 100%;
+  }
+}
+@media (max-width: 43.75em) {
+  .container-1 {
+    width: 100%;
+  }
+}
+@media (max-width: 37.5em) {
+  .container-1 {
+    width: 100%;
+    align-items: center;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .m h5 {
+    display: none;
+  }
 }
 
 .dots {
@@ -1098,6 +1140,12 @@ pt-3 {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
+@media (max-width: 43.75em) {
+  .left-column {
+    position: relative;
+    left: 18vw;
+  }
+}
 
 #profile_pic {
   display: block;
@@ -1109,6 +1157,14 @@ pt-3 {
 #theme-options-wrapper {
   display: flex;
   justify-content: center;
+}
+@media (max-width: 56.25em) {
+  #theme-options-wrapper {
+    flex-direction: column;
+  }
+  #theme-options-wrapper h5 {
+    font-size: 1.6rem;
+  }
 }
 
 .theme-dot {
@@ -1164,6 +1220,16 @@ pt-3 {
   width: 100%;
   height: 100%;
   border-radius: 2rem;
+}
+@media (max-width: 56.25em) {
+  .right-column {
+    margin: 6rem;
+  }
+}
+@media (max-width: 43.75em) {
+  .right-column {
+    display: none;
+  }
 }
 
 #preview-shadow {
@@ -1275,6 +1341,12 @@ pt-3 {
   margin-right: 1rem;
   margin-bottom: 2rem;
 }
+@media (max-width: 37.5em) {
+  .team-mate-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}
 
 .social-a {
   display: flex;
@@ -1337,6 +1409,14 @@ pt-3 {
   background-color: var(--mainColor);
   border-bottom: 1px solid var(--borderColor);
   padding: 5em 0;
+}
+@media (max-width: 25em) {
+  .s3 h2 {
+    font-size: 25px;
+  }
+  .s3 h4 {
+    font-size: 20px;
+  }
 }
 .s3 img {
   max-width: 100%;
