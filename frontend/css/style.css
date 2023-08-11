@@ -1153,15 +1153,16 @@ pt-3 {
 .right-column {
   grid-area: right-column;
   display: grid;
-  align-content: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-image: url(/frontend/new-1.jpg);
   background-size: cover;
   background-position: top;
   background-position: center center;
   margin: 7rem;
   background-color: var(--previewthickShadow);
+  border-radius: 2rem;
+}
+.right-column img {
+  width: 100%;
+  height: 100%;
   border-radius: 2rem;
 }
 
