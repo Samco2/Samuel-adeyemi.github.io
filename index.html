@@ -575,8 +575,7 @@
 
 					<a href=""></a>
 					<h3 style="text-align: center;">Get In Touch</h3>
-					<form id="contact-form" method="POST" action="{% url 'send_email' %}">
-						{% csrf_token %}
+					<form id="contact-form" method="POST" action="#">
 						<a name="contact"></a>
 						<label>Name</label>
 						<input required class="input-field" type="text" name="name">
