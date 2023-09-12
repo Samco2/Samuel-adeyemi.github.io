@@ -100,49 +100,12 @@
 						<li><a href="#projects" class="default-font">Projects</a></li>
 					</ul>
 
-					<img id="menu-icon" src="frontend/img/menu.png">
+					<img id="menu-icon" src="/frontend/img/menu.png">
 
 				</div>
 
 
-				<script type="text/javascript">
-					let menu = 'closed'
-
-					let menuIcon = document.getElementById('menu-icon')
-					let navigation = document.getElementById('navigation')
-					let closeBtn = document.getElementById('close-btn')
-
-					menuIcon.addEventListener('click', toggleMenu)
-					closeBtn.addEventListener('click', toggleMenu)
-
-
-					function toggleMenu() {
-						if (menu == 'closed') {
-							navigation.style.display = 'block'
-							closeBtn.style.display = 'block'
-							menu = 'open'
-						} else {
-							navigation.style.display = 'none'
-							closeBtn.style.display = 'none'
-							menu = 'closed'
-						}
-					}
-
-
-					// Attaching the event listener function to window's resize event
-
-					window.addEventListener("resize", function () {
-						let width = document.documentElement.clientWidth;
-						if (width > 1080) {
-							navigation.style.display = 'block'
-						} else {
-							navigation.style.display = 'none'
-						}
-						menu = 'closed'
-						closeBtn.style.display = 'none'
-					});
-
-				</script>
+				
 				<!-- navigation end -->
 
 				<div class="left-column animate__animated animate__fadeInLeft">
@@ -151,20 +114,6 @@
 
 				<div class="right-column animate__animated animate__zoomIn">
 					<img src="frontend/img/new.jpg" alt="" class="pic-dim">
-
-					<!--<div id="preview-shadow" class="align-items-center">
-						<div id="preview" class="pos2">
-							<div id="corner-tl" class="corner align-g"></div>
-							<div id="corner-tr" class="corner align-g"></div>
-							<h3>What I Do</h3>
-							<p>I was a research & graduate assitant at University, now I tickle my brain with
-								projects and coding.</p>
-							<h3>Who are mine</h3>
-							<p>I'm a passionate developer but more importantly I'm passionate about technology.</p>
-							<div id="corner-br" class="corner"></div>
-							<div id="corner-bl" class="corner"></div>
-						</div>
-					</div>-->
 				</div>
 			</div>
 		</div>
@@ -206,11 +155,20 @@
 						<p>Fullstack developer with primary focus on Django + React:</p>
 					</div>
 					<div class=" row align mb-4 ">
-						<p><a class="align" target="_blank"
+						<p><a class=" d-flex align" target="_blank"
 								href="https://samco2.github.io/Samuel-adeyemi.github.io/frontend/cv.pdf">Download
-								Resume</a></p>
+								Resume <span
+								class="ui__sc-cp7qw6-0 iGIqOk"><svg width="15" height="15" viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg">
+									<title>IconOpenNewWindows</title>
+									<g id="ExternalLinkSvg_IconOpenNewWindows" fill="#fff" fill-rule="evenodd">
+										<path id="ExternalLinkSvg_IconGrid" d="M0 0h24v24H0z"></path>
+										<path
+											d="M11.865 2.6v1.332H4.5a.666.666 0 0 0-.667.667v15.023c0 .368.299.666.667.666h15.066a.666.666 0 0 0 .666-.666V12.11h1.332v7.512a1.999 1.999 0 0 1-1.998 1.999H4.499A1.999 1.999 0 0 1 2.5 19.622V4.599c0-1.104.895-1.999 1.999-1.999h7.366zm8.549 0c.666 0 1.142.476 1.142 1.142v7.043h-1.333v-5.9l-7.221 7.232-.952-.952 7.222-7.233H13.37V2.6h7.043z"
+											id="Combined-Shape" fill="#000" fill-rule="nonzero"></path>
+									</g>
+								</svg></span></a></p>
 					</div>
-
 					<div id="skills" style="display: block !important;" class="font-1 u-center-text">
 						<h4 style="display:inline-block;">TOP Kits</h4>
 						<div style="display: flex !important; gap: 3rem" class="align">
@@ -253,16 +211,6 @@
 								src="frontend/img/instagram.png" class="team-mate-icon"></a>
 					</li>
 				</ul>
-
-
-				<!--<div class="social-links">
-					<img id="social_img" src="{% static 'frontend/img/follow.jpg' %}">
-					<h3>Find me on Twitter & Youtube</h3>
-
-					<a target="_blank" href="https://www.youtube.com/c/samco">YouTube: @samco</a>
-					<br>
-					<a target="_blank" href="https://twitter.com/samco11">Twitter: @samco</a>
-				</div>-->
 
 			</div>
 		</div>
@@ -310,8 +258,19 @@
 
 
 
-					<a href="https://samco2.github.io/cloudserver.github.io/" target="_blank" class="">
-						Actual-website
+					<a href="https://samco2.github.io/cloudserver.github.io/" target="_blank" class="d-flex align">
+						Visit actual-website
+						<span
+								class="ui__sc-cp7qw6-0 iGIqOk"><svg width="15" height="15" viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg">
+									<title>IconOpenNewWindows</title>
+									<g id="ExternalLinkSvg_IconOpenNewWindows" fill="#fff" fill-rule="evenodd">
+										<path id="ExternalLinkSvg_IconGrid" d="M0 0h24v24H0z"></path>
+										<path
+											d="M11.865 2.6v1.332H4.5a.666.666 0 0 0-.667.667v15.023c0 .368.299.666.667.666h15.066a.666.666 0 0 0 .666-.666V12.11h1.332v7.512a1.999 1.999 0 0 1-1.998 1.999H4.499A1.999 1.999 0 0 1 2.5 19.622V4.599c0-1.104.895-1.999 1.999-1.999h7.366zm8.549 0c.666 0 1.142.476 1.142 1.142v7.043h-1.333v-5.9l-7.221 7.232-.952-.952 7.222-7.233H13.37V2.6h7.043z"
+											id="Combined-Shape" fill="#000" fill-rule="nonzero"></path>
+									</g>
+								</svg></span>
 					</a>
 
 				</div>
@@ -422,24 +381,13 @@
 
 
 				<div class="col-1-of-2">
-
-
-
-
-
 					<video class="featured_image" src="frontend/video/template.mp4" controls type="video/mp4"></video>
-
-
-
 					<span class="tag">HTLM</span>
 					<span class="tag">CSS3</span>
 					<span class="tag">Git & Github</span>
 					<span class="tag">SASS</span>
 
 					<hr>
-
-
-
 				</div>
 				<div class="col-1-of-2">
 					<p>Xs-Template is a creative one page website template that can be used  by freelancers and
@@ -455,8 +403,19 @@
 
 
 
-					<a href="https://samco2.github.io/Xs-template.github.io/" target="_blank" class="">
-						Actual-website
+					<a href="https://samco2.github.io/Xs-template.github.io/" target="_blank" class="d-flex align">
+						Visit actual-website
+						<span
+								class="ui__sc-cp7qw6-0 iGIqOk"><svg width="15" height="15" viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg">
+									<title>IconOpenNewWindows</title>
+									<g id="ExternalLinkSvg_IconOpenNewWindows" fill="#fff" fill-rule="evenodd">
+										<path id="ExternalLinkSvg_IconGrid" d="M0 0h24v24H0z"></path>
+										<path
+											d="M11.865 2.6v1.332H4.5a.666.666 0 0 0-.667.667v15.023c0 .368.299.666.667.666h15.066a.666.666 0 0 0 .666-.666V12.11h1.332v7.512a1.999 1.999 0 0 1-1.998 1.999H4.499A1.999 1.999 0 0 1 2.5 19.622V4.599c0-1.104.895-1.999 1.999-1.999h7.366zm8.549 0c.666 0 1.142.476 1.142 1.142v7.043h-1.333v-5.9l-7.221 7.232-.952-.952 7.222-7.233H13.37V2.6h7.043z"
+											id="Combined-Shape" fill="#000" fill-rule="nonzero"></path>
+									</g>
+								</svg></span>
 					</a>
 
 				</div>
@@ -589,7 +548,6 @@
 					<a href=""></a>
 					<h3 style="text-align: center;">Get In Touch</h3>
 					<form id="contact-form" method="POST" action="{% url 'send_email' %}">
-						{% csrf_token %}
 						<a name="contact"></a>
 						<label>Name</label>
 						<input required class="input-field" type="text" name="name">
