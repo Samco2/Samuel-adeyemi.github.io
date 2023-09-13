@@ -77,4 +77,11 @@ let width = document.documentElement.clientWidth;
 	closeBtn.style.display = 'none'
 });
 
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+gtag('js', new Date());
+gtag('config', 'UA-47692315-56');
+
+
+
 				
